@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Toilet Finder & Review</title>
+    <meta name="description" content="Find clean public toilets in Kerala, rate your experience, and help Suchitwa Mission maintain hygiene standards.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">
+            <span class="logo-icon">🚽</span>
+            <h1>Kerala<span>Toilet</span></h1>
+        </div>
+        <nav>
+            <button id="find-btn" class="nav-btn active">Find Nearby</button>
+            <button id="review-btn" class="nav-btn">Review</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="map-section" class="active-section">
+            <div id="map"></div>
+            <div class="map-controls">
+                <button id="locate-me" title="Locate Me">📍</button>
+                <div class="filters">
+                    <button class="filter-chip">Cleanliness</button>
+                    <button class="filter-chip">Accessible</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="review-section" class="hidden-section">
+            <div class="card review-card">
+                <h2>Review a Toilet</h2>
+                <div id="qr-reader" class="qr-container"></div>
+                <div class="manual-select">
+                    <p>Or select from list</p>
+                    <select id="toilet-list">
+                        <option value="">Select Location</option>
+                    </select>
+                </div>
+                <form id="review-form" class="hidden">
+                    <div class="rating-group">
+                        <label>Rating</label>
+                        <div class="stars" id="star-rating">
+                            <span data-value="1">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="5">★</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Tell us about your experience..."></textarea>
+                    </div>
+                    <div class="upload-group" id="complain-upload">
+                        <label for="photo-upload" class="upload-label">
+                            <span class="icon">📷</span>
+                            <span>Upload Photos (Required for complaints)</span>
+                        </label>
+                        <input type="file" id="photo-upload" accept="image/*" multiple hidden>
+                        <div id="preview-container"></div>
+                    </div>
+                    <button type="submit" class="primary-btn">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- QR Scanner JS -->
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>
