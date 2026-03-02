@@ -36,10 +36,10 @@ Low-rated facilities are automatically escalated to Suchitwa Mission Kerala for 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: []
+- Frameworks used: []
+- Libraries used: []
+- Tools used: [VSCode , Git]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -51,14 +51,16 @@ Low-rated facilities are automatically escalated to Suchitwa Mission Kerala for 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [The project is a website called "Toilet Kerala" that helps travelers in Kerala find and rate public toilets based on real-time user feedback for better hygiene and comfort.It displays nearby toilets on a map with ratings, filters for cleanliness and accessibility. Users scan QR codes outside toilets to submit ratings, comments, and photos; low ratings trigger AI verification of uploaded images to confirm issues like dirt or damage.
+
+Complaint Process:Verified complaints auto-escalate to Suchitwa Mission Kerala via email with evidence, prompting cleanups. Home screen offers "Find Toilets" (geolocation-based) or "Review Toilet" options, built with React, Node.js, and AI tools like Nyckel for image analysis.]
+
 
 ---
 
 ## Implementation
+Antigravity
+Grok ai
 
 ### For Software:
 
@@ -72,30 +74,16 @@ List the key features of your project:
 [Run commands - e.g., npm start, python app.py]
 ```
 
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
 ---
 
 ## Project Documentation
 
+
 ### For Software:
 
-#### Screenshots (Add at least 3)
+#### Screenshots ()
+https://drive.google.com/drive/folders/1oDbBJmPM0o65ioI0CdpzfVD-6VgWs92G?usp=sharing
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
 
 #### Diagrams
 
@@ -366,7 +354,7 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+[https://drive.google.com/drive/folders/1oDbBJmPM0o65ioI0CdpzfVD-6VgWs92G?usp=sharing]
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
